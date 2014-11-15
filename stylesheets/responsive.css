@@ -1,0 +1,230 @@
+
+
+/*
+ * Media Queries
+ */
+
+@media (max-width:1350px) {
+
+  /* Nav Component */
+  .nav-inner-wrap {
+    padding-left: 70px;
+  }
+
+  /* Footer Component */
+  .footer-inner-wrap {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+}
+
+@media (max-width:1130px) {
+
+  /* Work Section */
+
+  /* Start stacking elements */
+  .work-container .col {
+    display: block;
+  }
+
+  .right {
+    float: none;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  /* About Section */
+
+  /* Center the leadership col */
+  .about-container {
+    text-align: center;
+  }
+
+  .quote-wrapper {
+    text-align: left;
+    padding-right: 60px;
+    width: 38%;
+  }
+
+  .quote,
+  .quote-author {
+    padding: 0;
+  }
+
+  .about {
+    width: 50%;
+    padding-right: 0;
+    padding-bottom: 44px;
+    text-align: left;
+  }
+
+  .leadership {
+    float: none;
+    width: 50%;
+    text-align: left;
+  }
+
+  /* Footer */
+
+  /* Get rid of attributions on mobile */
+  .footer .attributions {
+    display: none;
+  }
+
+}
+
+@media (max-width:830px) {
+
+  /* Work Section */
+
+  /* Get rid of the work icons */
+  .work-icon {
+    display: none;
+  }
+
+}
+
+@media (max-width:770px) {
+
+  /* Nav Component */
+  .nav-bar {
+    padding: 0;
+  }
+
+  .nav-inner-wrap {
+    width: 313px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .nav-inner-wrap .title,
+  .nav-inner-wrap .nav-items {
+    float: none;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  /* About Section */
+
+  /* Stack about section elements */
+  .about-container .col {
+    display: block;
+  }
+
+  .about-container {
+    text-align: left;
+  }
+
+  .quote-wrapper {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .about,
+  .leadership {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /* Footer Component */
+  .footer .contact-info {
+    line-height: 9px;
+    margin-top: 7px;
+  }
+
+  .footer .contact-info li {
+    display: block;
+  }
+
+  /* Get rid of LinkedIn */
+  .footer .contact-info .linkedin {
+    display: none;
+  }
+
+}
+
+@media (max-width:500px) {
+
+   /* Nav Component */
+
+   /* Making the name a bit smaller on mobile */
+  .nav-inner-wrap .name a {
+    font-size: 25px;
+    letter-spacing: 11.5px;
+    margin-right: -11.5px;
+  }
+
+  .nav-inner-wrap .subtitle {
+    font-size: 10px;
+  }
+
+  /* Main Section */
+
+  .main-container {
+    text-align: center;
+  }
+
+  .blurb {
+    margin: 385px auto 0 auto;
+  }
+
+  /* Work Section */
+
+  .work-container {
+    padding: 30px 38px 110px 35px;
+  }
+
+  /* About Section */
+  .about-container {
+    padding: 30px 38px 110px 35px;
+  }
+
+  .quote-wrapper {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #654C9F;
+  }
+
+  .quote {
+    padding: 0 0 0 18px;
+  }
+
+  .about {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #654C9F;
+  }
+
+  .leadership {
+    width: 100%;
+    padding: 30px 0 40px 0;
+  }
+
+  /* Footer Component */
+
+  .footer-inner-wrap {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width:400px) {
+
+   /* Footer Component */
+
+  .footer-inner-wrap {
+    padding-right: 15px;
+    padding-left: 28px;
+  }
+
+  .footer .contact-info li {
+    font-size: 11px;
+  }
+
+}

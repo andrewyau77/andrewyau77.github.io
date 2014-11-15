@@ -1,0 +1,453 @@
+
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoItalic;
+  src: url(../fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: RobotoBlack;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+
+/*
+ * Scaffolding
+ */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+/*
+ * Nav Bar
+ */
+
+/* Nav Bar Component */
+.nav-bar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 140px;
+  font-family: MontserratBold;
+  text-align: center;
+  background-color: #E8E8E8;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+/* Wrapper for nav items */
+.nav-inner-wrap {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nav-inner-wrap .title,
+.nav-inner-wrap .nav-items {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Wrapper for name and subtitle */
+.nav-inner-wrap .title {
+  text-align: left;
+  margin-top: 45px;
+  float: left;
+}
+
+.nav-inner-wrap .name a {
+  letter-spacing: 10.5px;
+  font-size: 29px;
+  line-height: 40px;
+  margin-right: -10.5px;
+}
+
+.nav-inner-wrap .subtitle {
+  margin-top: -3px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.nav-inner-wrap .subtitle a {
+  color: #654C9F;
+}
+
+/* Individual nav items */
+.nav-items {
+  vertical-align: top;
+  float: right;
+  margin-top: 60px;
+  margin-right: 80px;
+  padding: 0;
+}
+
+.nav-items li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.nav-bar .nav-items li:last-child {
+  margin-right: 0;
+}
+
+.nav-items .active a,
+.nav-items a:hover {
+  padding-bottom: 5px;
+  color: #654C9F;
+  border-bottom: solid 3px #654C9F;
+}
+
+
+/*
+ * Main Page
+ */
+
+/* Wrapper for background image */
+.bg-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/andrew.jpg');
+  background-position: center;
+  background-position-y: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container for main page */
+.main-container {
+  position: relative;
+  max-width: 1300px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.blurb {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  min-height: 350px;
+  margin-right: 100px;
+  margin-top: 385px;
+  font-size: 15px;
+  font-family: Roboto;
+  color: #787878;
+  letter-spacing: 0.8px;
+  line-height: 21px;
+  text-align: left;
+}
+
+/* Style for starting bit of the blurb */
+.blurb-start {
+  font-family: RobotoBlack;
+  color: #000;
+  font-size: 12px;
+}
+
+
+/*
+ * General Section Styles
+ */
+
+/* General column style */
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Purple titles of the column/section */
+.section-title {
+  padding-bottom: 10px;
+  font-family: MontserratBold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #654C9F;
+  letter-spacing: 3px;
+  line-height: 19px;
+  border-bottom: solid 2px #654C9F;
+}
+
+/* Wrapper for position/company info or section subtitle */
+.info {
+  padding-top: 20px;
+  line-height: 21px;
+}
+
+/* Font size is the same for various text */
+.section-subtitle,
+.position,
+.school,
+.company,
+.company-text,
+.field {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.position,
+.school,
+.section-subtitle {
+  font-family: RobotoBlack;
+}
+
+.company {
+  font-family: Roboto;
+}
+
+.company-text,
+.field {
+  font-family: RobotoItalic;
+  color: #787878;
+}
+
+.location,
+.date,
+.description {
+  font-family: Roboto;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #787878;
+}
+
+.exp-description {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.description {
+  line-height: 21px;
+}
+
+
+/*
+ * Work Section
+ */
+
+.work-container {
+  max-width: 1300px;
+  padding: 50px 60px 122px 70px;
+  margin: 0 auto;
+}
+
+.left {
+  width: 74%;
+}
+
+.right {
+  width: 20%;
+  float: right;
+}
+
+.work-exp {
+  padding-right: 25px
+  padding-bottom: 30px;
+}
+
+.seperate {
+  border-bottom: solid 2px #654C9F;
+}
+
+.work-exp .info {
+  display: inline-block;
+}
+
+.work-icon {
+  display: inline-block;
+  float: right;
+  padding-top: 30px;
+}
+
+#olg-icon {
+  width: 70px;
+}
+
+#toronto-icon, #ontario-icon {
+  width: 150px;
+}
+
+.education,
+.skills {
+  padding-bottom: 30px;
+}
+
+.education .exp-description {
+  margin-bottom: 0;
+}
+
+.skills .exp-description {
+  margin: 0;
+}
+
+
+/*
+ * About Section
+ */
+
+/* Wrapper to add a background with full width*/
+.about-wrapper {
+  background-color: #F0F1F0;
+}
+
+.about-container {
+  min-height: 420px;
+  max-width: 1300px;
+  padding: 50px 77px 118px 77px;
+  margin: 0 auto;
+}
+
+/* Wrapper for the quote */
+.quote-wrapper {
+  width: 33%;
+  font-family: MontserratBold;
+  text-transform: uppercase;
+  color: #654C9F;
+  letter-spacing: 3px;
+}
+
+/* Open Quote */
+.quote:before {
+  content: "\201C";
+  font-size: 35px;
+  position: relative;
+  top: 5px;
+}
+
+.quote {
+  padding-right: 35px;
+  padding-left: 18px;
+  font-size: 28px;
+  line-height: 1.5em;
+  text-indent: -17px;
+}
+
+/* Close Quote */
+.quote:after {
+  content: "\201D";
+  font-size: 35px;
+  position: relative;
+  top: 4px;
+}
+
+.quote-author {
+  font-size: 13px;
+  line-height: 80px;
+  padding-left: 20px;
+}
+
+/* About blurb */
+.about {
+  width: 40%;
+  padding-right: 63px;
+  line-height: 1.6em;
+  font-size: 1em;
+  font-family: Roboto;
+  color: #787878;
+}
+
+.about a {
+  color: #654C9F;
+}
+
+.about a:hover {
+  border-bottom: 1px solid #654C9F;
+}
+
+.leadership {
+  width: 19%;
+}
+
+
+/*
+ * Footer
+ */
+
+/* Footer Component */
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 75px;
+  font-family: Roboto;
+  text-align: center;
+  background-color: #E8E8E8;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.footer-inner-wrap {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer ul,
+.footer ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+.footer .contact-info {
+  line-height: 44px;
+  float: left;
+  text-align: left;
+}
+
+.footer .contact-info li {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.footer a {
+  color: #654C9F;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid #654C9F;
+}
+
+.footer .attributions {
+  padding-right: 60px;
+}
+
+.footer .attributions,
+.footer .copy {
+  float: right;
+  font-size: 10px;
+  line-height: 57px;
+}
+
+.footer-icon {
+  position: relative;
+  top: 7px;
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+/* For nav and footer to be transparent over background */
+.clear {
+  background-color: rgba(255,255,255,0.4);
+}
