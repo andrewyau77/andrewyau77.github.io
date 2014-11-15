@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   });
 
-  // On scroll
+  // On resize
   $(window).resize(function() {
 
     // Check if the bottom of window is past 800 for footer
