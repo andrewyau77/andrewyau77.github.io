@@ -287,11 +287,11 @@ a {
 
 .education,
 .skills {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .education .exp-description {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .skills .exp-description {
